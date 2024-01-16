@@ -1,0 +1,194 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px 15px; /* Add some padding around the text */
+    border-radius: 5px; /* Slightly rounded corners for a button-like appearance */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Slightly darker shade of gray for hover effect */
+    color: #007bff; /* Change text color on hover */
+}
+
+main {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 150px; /* Set the width as desired */
+    height: auto; /* Set height to 'auto' to maintain aspect ratio */
+    display: block; /* Changes the image from inline to block to allow margin auto */
+    border-radius: 5px; /* Optional: rounds the corners of the image */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.project-title {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 5px 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Slightly rounded corners for a button-like appearance */
+    margin: 10px 0; /* Add some margin above and below the title */
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.project-title:hover {
+    background-color: #e0e0e0; /* Slightly darker shade of gray for hover effect */
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 800px; /* Adjust based on your design */
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px; /* Adjust this value to increase space between contact items */
+    /* For example, 'margin: 20px 40px' will increase horizontal spacing */
+}
+
+.contact-title {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between the title and the detail */
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+}
+
+.contact-detail i {
+    margin-right: 10px; /* Space between the icon and the text */
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    nav a {
+        display: block; /* Makes the links full width for smaller screens */
+        margin-bottom: 10px; /* Adds space between the links */
+    }
+
+    .project-title {
+        display: block; /* Makes the title full width for smaller screens */
+        width: 100%; /* Ensures the background color spans the full width */
+    }
+}
